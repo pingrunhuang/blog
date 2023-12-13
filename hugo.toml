@@ -1,4 +1,4 @@
-baseURL = "https://www.example.org/"
+baseURL = "https://www.pingrunhuang.github.io/"
 languageCode = "en-us"
 theme = "aafu"
 
@@ -6,16 +6,16 @@ theme = "aafu"
   writeStats = true
 
 [params]
-    title = "Aafu theme"
-    author = "Darshan Baral"
-    description = "Website title"
-    copyright = "short copyright message"
+    title = "Frank's blog"
+    author = "Frank Huang"
+    description = "A safari of me exploring the tech world"
+    copyright = "2022-2023"
 
     [params.theme]
         # Available themes are 'light', 'dark', 'ocean', and 'pinkish'
-        mainTheme = "ocean"
+        mainTheme = "pinkish"
         # setting false below will hide 'aafu by darshan' displayed under the profile pic
-        showAttribute = true
+        showAttribute = false
         singlePage = false
 
     [params.favicons]
@@ -42,32 +42,32 @@ theme = "aafu"
 
         [[params.social.list]]
             icon = "fab fa-linkedin-in"
-            url = "#"
+            url = "https://www.linkedin.com/in/frank-huang-372409105/"
             title = "LinkedIn"		
-        [[params.social.list]]
-            icon = "fab fa-stack-overflow"
-            url = "#"
-            title = "StackOverflow"
+        #[[params.social.list]]
+        #    icon = "fab fa-stack-overflow"
+        #    url = "#"
+        #    title = "StackOverflow"
         [[params.social.list]]
             icon = "fab fa-github"
-            url = "#"
+            url = "https://github.com/pingrunhuang"
             title = "GitHub"
         [[params.social.list]]
             icon = "fab fa-twitter"
-            url = "#"
+            url = "https://twitter.com/frank_aico"
             title = "Twitter"
-        [[params.social.list]]
-            icon = "fab fa-orcid"
-            url = "#"
-            title = "Orcid"
-        [[params.social.list]]
-            icon = "ai ai-google-scholar"
-            url = "#"
-            title = "Google Scholar"
-        [[params.social.list]]
-            icon = "fab fa-researchgate"
-            url = "#"
-            title = "ResearchGate"
+        #[[params.social.list]]
+        #    icon = "fab fa-orcid"
+        #    url = "#"
+        #    title = "Orcid"
+        #[[params.social.list]]
+        #    icon = "ai ai-google-scholar"
+        #    url = "#"
+        #    title = "Google Scholar"
+        #[[params.social.list]]
+        #    icon = "fab fa-researchgate"
+        #    url = "#"
+        #    title = "ResearchGate"
 
     #Specify what is showin in the Accordion
     [[params.showInAccordion]]
@@ -89,7 +89,7 @@ theme = "aafu"
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "This is a demo of the `aafu` theme. It has `light`, `dark`, `ocean`, and `pinkish` themes."
+        description = "Hi, I'm Frank from shenzhen China. Currently looking for a remote job in the crypto/AI space"
 
     # Experience section
     [params.experience]
@@ -97,15 +97,30 @@ theme = "aafu"
         icon = "fas fa-briefcase"
 
         [[params.experience.list]]
-            position = "Job Title"
-            dates = "2019 - *Present*"
-            company = "Company Name"
-            details = "Printed from desktop. Sent [emails](#). Called people using telephone. Drank water from office cooler. Ate donuts on people's birthdays."
+            position = "python developer/quant developer(SZ&HK)"
+            dates = "2019 - 2023"
+            company = "crypto.com"
+            details = '''
+            1. Built datahub to grab different types of 
+                market data from different exchanges through 
+                HTTPS and WEBSOCKET.
+            2. Using django and huey/Celeory to
+                build our middle office platform for 
+                trading operation usage.
+            '''
         [[params.experience.list]]
-            position = "Job Title"
+            position = "Big data engineer(SZ)"
             dates = "2018 - 2019"
-            url = "#"
-            company = "Company Name"
+            company = "Cardinal operation"
+        [[params.experience.list]]
+            position = "data engineer(SZ)"
+            location = "shenzhen"
+            dates = "2017 - 2018"
+            company = "TouchStone"
+        [[params.experience.list]]
+            position = "Java developer intern(FR Paris)"
+            dates = "2016 - 2017"
+            company = "Scaled Risk"
 
     # Education section
     [params.education]
@@ -113,21 +128,17 @@ theme = "aafu"
         icon = "fas fa-graduation-cap"
 
         [[params.education.list]]
-            degree = "Ph.D. in Subject"
-            college = "University of State-City"
-            dates = "2013 - 2018"
-            thesis_title = "Effect of humans on other humans: a study of human behavior."
+            degree = "M.S in Information system"
+            college = "ESIGELEC(École Supérieure d'Ingénieurs en Génie Électrique)"
+            dates = "2015 - 2017"
+            thesis_title = "#"
             thesis_url = "#"
         [[params.education.list]]
-            degree = "M.S. in Subject"
-            college = "University of State-City"
-            dates = "2013 - 2018"
-            thesis_title = "Effect of humans on other humans: a study of human behavior."
+            degree = "B.S in Mathematics and applied mathematics(statistics)"
+            college = "South China University of Technology"
+            dates = "2011 - 2015"
+            thesis_title = "#"
             thesis_url = "#"
-        [[params.education.list]]
-            degree = "B.S. in Subject"
-            college = "University of State-City"
-            dates = "2004 - 2009"
 
     # Publication section
     [params.publication]
@@ -137,52 +148,48 @@ theme = "aafu"
         format = ["date", "authors", "title", "journal"]
         #If you don't want to group publications, comment the line below by adding # at the beginning
         types = ["Journal Articles", "Proceedings"]
-
-        [[params.publication.list]]
-            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            authors = "F Last, F Second, P secondary"
-            date = "2018"
-            journal = "Journal of Field 52 (16), 9033-9044"
-            url = "#"
-            type = "Journal Articles"
-
-        [[params.publication.list]]
-            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            authors = "F Last, F Second, P secondary"
-            date = "2018"
-            journal = "Journal of Field 52 (16), 9033-9044"
-            url = "#"
-            type = "Journal Articles"
-		
-        [[params.publication.list]]
-            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            authors = "F Last, F Second, P secondary"
-            date = "2018"
-            journal = "Journal of Field 52 (16), 9033-9044"
-            url = "#"
-            type = "Proceedings"
+        #[[params.publication.list]]
+        #    title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        #    authors = "F Last, F Second, P secondary"
+        #    date = "2018"
+        #    journal = "Journal of Field 52 (16), 9033-9044"
+        #    url = "#"
+        #    type = "Journal Articles"
+        #[[params.publication.list]]
+        #    title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        #    authors = "F Last, F Second, P secondary"
+        #    date = "2018"
+        #    journal = "Journal of Field 52 (16), 9033-9044"
+        #    url = "#"
+        #    type = "Journal Articles"
+        #[[params.publication.list]]
+        #    title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        #    authors = "F Last, F Second, P secondary"
+        #    date = "2018"
+        #    journal = "Journal of Field 52 (16), 9033-9044"
+        #    url = "#"
+        #    type = "Proceedings"
 
     # Project section
-    [params.project]
-        title = "Projects"
-        icon = "fas fa-project-diagram"
-
-        [[params.project.list]]
-            title = "Project 1"
-            url = "#"
-            description = "Description of the project"
-        [[params.project.list]]
-            title = "Project 2"
-            url = "#"
-            description = "Description of the project"
-        [[params.project.list]]
-            title = "Project 3"
-            url = "#"
-            description = "Description of the project"
-        [[params.project.list]]
-            title = "Project 4"
-            url = "#"
-            description = "Description of the project"
+    #[params.project]
+    #    title = "Projects"
+    #    icon = "fas fa-project-diagram"
+    #    [[params.project.list]]
+    #        title = "Project 1"
+    #        url = "#"
+    #        description = "Description of the project"
+    #    [[params.project.list]]
+    #        title = "Project 2"
+    #        url = "#"
+    #        description = "Description of the project"
+    #    [[params.project.list]]
+    #        title = "Project 3"
+    #        url = "#"
+    #        description = "Description of the project"
+    #    [[params.project.list]]
+    #        title = "Project 4"
+    #        url = "#"
+    #        description = "Description of the project"
 
     # Skill section
     [params.skill]
@@ -191,14 +198,14 @@ theme = "aafu"
         icon = "fas fa-cogs"
 
         [[params.skill.list]]
-            skill = "Skill 1, Skill 2"
-            skillrating = 90
-        [[params.skill.list]]
-            skill = "Skill 3"
+            skill = "Python"
             skillrating = 80
         [[params.skill.list]]
-            skill = "Skill 4"
-            skillrating = 50
+            skill = "Golang"
+            skillrating = 20
+        [[params.skill.list]]
+            skill = "Javascript"
+            skillrating = 20
 
     # Hobby section
     [params.hobby]
@@ -208,6 +215,6 @@ theme = "aafu"
         [[params.hobby.list]]
             hobby = "Cooking"
         [[params.hobby.list]]
-            hobby = "Hiking"
+            hobby = "Surfing"
         [[params.hobby.list]]
-            hobby = "Baking"
+            hobby = "Traveling"
