@@ -1,6 +1,7 @@
 baseURL = "https://www.pingrunhuang.github.io/"
 languageCode = "en-us"
 theme = "aafu"
+googleAnalytics = "UA-123-45"
 
 [build]
   writeStats = true
