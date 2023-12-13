@@ -34,7 +34,7 @@ googleAnalytics = "UA-123-45"
     [params.profile]
         name = "Frank Huang"
         tagline = ""
-        location = "shenzhen coast city"
+        location = "Shenzhen coast city"
         photo = "profile.jpg"
 
     # Section for links to social websites
@@ -90,7 +90,7 @@ googleAnalytics = "UA-123-45"
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "Hi, I'm Frank from shenzhen China. Currently looking for a remote job in the crypto/AI space"
+        description = "Hi, I'm Frank from Shenzhen China. Currently looking for a remote job in the crypto/AI space"
 
     # Experience section
     [params.experience]
