@@ -10,8 +10,8 @@ googleAnalytics = "UA-123-45"
     title = "Frank's blog"
     author = "Frank Huang"
     description = "A safari of me exploring the tech world"
-    copyright = "2022-2023"
-
+    copyright = "2023-2024"
+    
     [params.theme]
         # Available themes are 'light', 'dark', 'ocean', and 'pinkish'
         mainTheme = "pinkish"
